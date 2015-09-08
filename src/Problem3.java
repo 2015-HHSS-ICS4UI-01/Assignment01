@@ -16,6 +16,8 @@ public class Problem3 {
         
         Scanner s = new Scanner(System.in);
         
+        final double ticketPrice = 35d;
+        
         String[] expenses = new String[]{"food", "DJ", "the rental hall", "the decorations", 
             "the wait staff", "any miscellaneous expenses"};
         
@@ -27,6 +29,9 @@ public class Problem3 {
             total += s.nextDouble();
         }
         
-        System.out.println(total);
+        double breakEvenPoint = Math.ceil(total/ticketPrice);
+        
+        System.out.println("total: $" + total);
+        System.out.println("break even: " + breakEvenPoint + " tickets");
     }
 }
