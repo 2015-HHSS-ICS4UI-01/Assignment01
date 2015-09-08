@@ -24,11 +24,7 @@ public class Problem4 {
         System.out.print("Num between 1 and 10 (inclusive)\n>> ");
         num = s.nextInt();
         
-        for (int i = 0; i < num; i ++)
-        {
-            System.out.print("*");
-        }
-        System.out.println();
+        System.out.println(new String(new char[num]).replace("\0", "*"));
         
     }
     
