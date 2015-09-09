@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author morgennebesenschek
  */
-public class Question3 {
+public class Problem3 {
 
     /**
      * @param args the command line arguments
@@ -42,11 +42,11 @@ public class Question3 {
         
         System.out.println("The total cost of prom is " + totalCost + ".");     //outputs to the user the total cost of prom
         
-        double tickets = totalCost / 35;                                        //divides the total cost of prom by the cost of one ticket
-        Math.ceil(tickets);                                                     //if variable tickets has a decimal following, round up to the nearest int
+        double breakeven = totalCost / 35;                                      //divides the total cost of prom by the cost of one ticket
+        double tickets = Math.ceil(breakeven);                                  //if variable tickets has a decimal following, round up to the nearest int
         
         System.out.print("To break even, you will need to sell ");              //outputs to the user the number of tickets needed to break even
-        System.out.println(tickets + "tickets.");
+        System.out.println(tickets + " tickets.");
     }
     
 }
