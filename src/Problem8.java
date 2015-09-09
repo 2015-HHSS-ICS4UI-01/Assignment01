@@ -15,20 +15,7 @@ public class Problem8 {
     /**
      * @param args the command line arguments
      */
-    /*Illustrate the growth of money in a savings account. 
-     * The user enters the initial amount and the interest 
-     * rate used to calculate the number of years until the 
-     * money doubles and the number of years until the money 
-     * reaches a million dollars. 
 
-Note: The balance at the end of each year is 
-(1      + r) * balance
-where balance is the previous balance, and r is the annual rate of interest in decimal form. 
-
-Output the number of years it takes for the money to 
-* double from the original value and the number of years 
-* it will take for them money to reach a million dollars.
-* Name your class Problem8.*/
     public static void main(String[] args) {
         
         Scanner s = new Scanner(System.in);
