@@ -16,30 +16,41 @@ public class Problem5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);                                 //initializes the scanner
+        //initializes the scanner
+        Scanner input = new Scanner(System.in);                                 
         
-        System.out.println("Please enter a number between 1 and 10.");          //asks the user for a number from 1-10
+        //asks the user for a number from 1-10
+        System.out.println("Please enter a number between 1 and 10.");          
         
-        int number = 0;                                                         //initializes the number as a variable    
+        //initializes the number as a variable 
+        int number = 0;                                                            
         
-        while(number < 1 || number > 10)                                        //while number entered is lower than 1 or greater than 10
+        //while number entered is lower than 1 or greater than 10
+        while(number < 1 || number > 10)                                        
         {
-            number = input.nextInt();                                           //allow user to input a number
+            //allow user to input a number
+            number = input.nextInt();                                           
             
-            if(number < 1 || number > 10)                                       //if number is lower than 1 or greater than 10
+            //if number is lower than 1 or greater than 10
+            if(number < 1 || number > 10)                                       
             {
-                System.out.println("ERROR: Number is not between 1 and 10.");   //inform user, allow them to reenter their number
+                //inform user, allow them to reenter their number
+                System.out.println("ERROR: Number is not between 1 and 10.");   
             }
         }
         
-        for(int i = 1; i <= number; i++)                                        //while int i is less than user's number
+        //while int i is less than user's number
+        for(int i = 1; i <= number; i++)                                        
         {          
-            for(int b = 1; b <= number; b++)                                    //run loop with int b until equal to user's number
+            //run loop with int b until equal to user's number
+            for(int b = 1; b <= number; b++)                                    
             {
-                System.out.print("*");                                          //to print asterisks equal to user's number
+                //to print asterisks equal to user's number
+                System.out.print("*");                                          
             }
             
-        System.out.println("");                                                 //and start a new line for the next row of asterisks
+        //starts a new line for the next row of asterisks
+        System.out.println("");                                                 
         
         }
         

@@ -16,36 +16,57 @@ public class Problem3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);                                 //initializes the scanner
+        //initializes the scanner
+        Scanner input = new Scanner(System.in);                                 
         
+        //initializes the array that will hold each cost related to the prom
         double[] total = new double[6];
         
+        //asks user for the cost of the food
         System.out.println("Please enter the cost of the food.");
-        total[0] = input.nextDouble();                                          //stores the cost of food
+        //stores the cost of food
+        total[0] = input.nextDouble();       
+        //asks user for the cost of the DJ
         System.out.println("Please enter the cost of the DJ.");
-        total[1] = input.nextDouble();                                          //stores the cost of the DJ
+        //stores the cost of the DJ
+        total[1] = input.nextDouble();    
+        //asks user for the cost of the hall rental
         System.out.println("Please enter the cost of the hall rental.");
-        total[2] = input.nextDouble();                                          //stores the cost of the hall rental
+        //stores the cost of the hall rental
+        total[2] = input.nextDouble();                                          
+        //asks user for the cost of the decorations
         System.out.println("Please enter the cost of the decorations.");
-        total[3] = input.nextDouble();                                          //stores the cost of the decorations
+        //stores the cost of the decorations
+        total[3] = input.nextDouble();                                          
+        //asks user for the cost of the wait staff
         System.out.println("Please enter the cost of the wait staff.");
-        total[4] = input.nextDouble();                                          //stores the cost of the wait staff
+        //stores the cost of the wait staff
+        total[4] = input.nextDouble();                                          
+        //asks user for the cost of miscellaneous expenses
         System.out.println("Please enter the cost of miscellaneous expenses.");
-        total[5] = input.nextDouble();                                          //stores the cost of misc. expenses
+        //stores the cost of misc. expenses
+        total[5] = input.nextDouble();                                          
         
-        double totalCost = 0;                                                   //initializes variable for the total cost of prom
-        
-        for(int i = 0; i < 6; i++)                                              //calculates the total cost of prom
+        //initializes variable for the total cost of prom
+        double totalCost = 0;                                                   
+       
+        //calculates the total cost of prom
+        for(int i = 0; i < 6; i++)                                              
         {
-            totalCost = totalCost + total[i];                                   //by adding all costs together
+            //by adding all costs together
+            totalCost = totalCost + total[i];                                   
         }
         
-        System.out.println("The total cost of prom is " + totalCost + ".");     //outputs to the user the total cost of prom
+        //outputs to the user the total cost of prom
+        System.out.println("The total cost of prom is " + totalCost + ".");     
         
-        double breakeven = totalCost / 35;                                      //divides the total cost of prom by the cost of one ticket
-        double tickets = Math.ceil(breakeven);                                  //if variable tickets has a decimal following, round up to the nearest int
+        //divides the total cost of prom by the cost of one ticket
+        double breakeven = totalCost / 35;
+        //if variable tickets has a decimal following, round up to the nearest integer
+        double tickets = Math.ceil(breakeven);                                  
         
-        System.out.print("To break even, you will need to sell ");              //outputs to the user the number of tickets needed to break even
+        //outputs to the user the number of tickets needed to break even
+        System.out.print("To break even, you will need to sell ");              
         System.out.println(tickets + " tickets.");
     }
     

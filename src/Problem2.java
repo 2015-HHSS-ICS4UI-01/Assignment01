@@ -16,26 +16,36 @@ public class Problem2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //initializes the scanner
         Scanner input = new Scanner(System.in);
         
-        double[] numbers = new double[3];  //initializes numbers as an array
+        //initializes numbers to be inputed as an array
+        double[] numbers = new double[3];  
         
-        System.out.println("Please enter 3 numbers.");  //asks the user to input three numbers
+        //asks the user to input three numbers
+        System.out.println("Please enter 3 numbers.");  
         
-        for(int i = 0; i < 3; i++)                      //loop runs until completed 3 times
+        //loop runs until 3 numbers are entered
+        for(int i = 0; i < 3; i++)                      
         {
-            System.out.println("Number " + (i + 1) + ":");    //asks the user for each individual number
-            numbers[i] = input.nextInt();               //to store in the array numbers
+            //asks the user for each individual number
+            System.out.println("Number " + (i + 1) + ":");    
+            //to store in the array
+            numbers[i] = input.nextInt();               
         }
         
-        double product = numbers[0] * numbers[1] * numbers[2]; //calculates the product of the three numbers
-        double root = Math.sqrt(product); //calculates the square root of the product
-        double square = Math.pow(product,2); //calculates the square of the product
+        //calculates the product of the three numbers
+        double product = numbers[0] * numbers[1] * numbers[2];
+        //calculates the square root of the product
+        double root = Math.sqrt(product); 
+        //calculates the square of the product
+        double square = Math.pow(product,2); 
         
-        
+        //outputs the product of all three numbers to the user
         System.out.println("Product: " + product);
+        //outputs the square root of the product to the user
         System.out.println("Square Root of Product: " + root);
+        //outputs the square of the product to the user
         System.out.println("Product Squared: " + square);
         
     }

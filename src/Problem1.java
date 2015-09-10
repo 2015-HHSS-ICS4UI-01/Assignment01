@@ -16,10 +16,15 @@ public class Problem1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);   //imports the Scanner
-        System.out.println("What is your name?"); //asks the user for their name
-        String name = input.nextLine(); //set String name to the the name entered by the user
-        System.out.println("Hello " + name + "!");   //greets the user by the name they entered
+        //imports the Scanner
+        Scanner input = new Scanner(System.in);   
+        
+        //asks the user for their name
+        System.out.println("What is your name?"); 
+        //set String name to the the name entered by the user
+        String name = input.nextLine(); 
+        //outputs a greeting to the user using the name they entered
+        System.out.println("Hello " + name + "!");   
     }
     
 }
