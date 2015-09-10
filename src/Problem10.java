@@ -19,6 +19,14 @@ public class Problem10 {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter one word per line. To stop, type 'exit'. ");
         int count = 0;
-        
+        while (true)
+        {
+            if (input.next().equals("exit"))
+            {
+                break;
+            }
+            count++;
+        }
+        System.out.println("You entered " + count + " words");
     }
 }
