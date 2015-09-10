@@ -36,7 +36,7 @@ public class Problem8 {
         System.out.println("double " + yrs);
         
         yrs = 0;
-        while (principal*Math.pow((1+rate), yrs) < 1000000)
+        while (principal*Math.pow((1+rate), yrs) < 1e6)
         {
             yrs ++;
         }
