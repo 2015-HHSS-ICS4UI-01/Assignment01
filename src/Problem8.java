@@ -26,17 +26,19 @@ public class Problem8 {
         interestRate = input.nextDouble();
         
         double goalBalance = initialAmount * 2;
-        double currentBalance = initialAmount;
-        while (currentBalance < goalBalance)
+        double doubleBalance = initialAmount;
+        double millionBalance = initialAmount;
+        while (doubleBalance < goalBalance)
         {
             years++;
-            currentBalance *= (1 + interestRate / 100);
+            doubleBalance *= (1 + interestRate / 100);
         }
         System.out.println("It will take " + years + " years in order to double your initial balance.");
-        while (currentBalance < 1000000)
+        years = 0;
+        while (millionBalance < 1000000)
         {
             years++;
-            currentBalance *= (1 + interestRate / 100);
+            millionBalance *= (1 + interestRate / 100);
         }
         System.out.println("It will take " + years + " years in order to reach a million dollars.");
         
