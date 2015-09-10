@@ -31,10 +31,11 @@ public class Problem9 {
         int letterCount = 0;
         for (int i = 0; i < 10; i ++)
         {
+            System.out.print(">> ");
             letterCount += s.next().length();
         }
         
-        System.out.println((double)(letterCount/10));
+        System.out.println((double)(letterCount/10d));
         
     }
 }
