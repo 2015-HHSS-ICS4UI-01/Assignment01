@@ -44,7 +44,7 @@ public class Problem8 {
         }
         
         //ask user for their interest rate in a decimal form, stores as variable
-        System.out.println("Enter your interest rate in decimal form (e.g 7% = 0.07).");
+        System.out.println("Please enter your interest rate.");
         double interest = 0;
         
         //while interest is less than or equal to zero
@@ -66,6 +66,11 @@ public class Problem8 {
             }
         }
         
+        if(interest > 1)
+        {
+            interest = interest / 100;
+        }
+        
         //calculates the value double of user's initial savings
         double doubled = balance * 2;
         
@@ -74,31 +79,52 @@ public class Problem8 {
         int yearMil = 0;
         int year = 0;
         
-        //calculate the growth of user's money
+        //initializes a boolean to determine whether or not the user's initial amount has been doubled
+        boolean alreadyDoubled = false;
+        boolean alreadyMillion = false;
+        
+        if(balance >= 1000000)
+        {
+            alreadyMillion = true;
+        }
+        
         do{
-            
+            //calculate the growth of user's money per year
             double balanceNew = (1 + interest) * balance;
+            //each year, replace balance's value with that of the year before's 
             balance = balanceNew;
+            //increase by one year each round
             year++;
+            //informs the user of each year and accumulated balance
             System.out.println("Year " + year + ": " + balanceNew); 
             
-            if(balanceNew >= doubled)
+            //check for the year user's amount has doubled until the year is found
+            if(!alreadyDoubled)
             {
-                yearDouble = year;
+                if(balanceNew >= doubled)
+                {
+                    yearDouble = year;
+                    alreadyDoubled = true;
+                }
+            
             }
-            else
+            
+            //check for the year user's amount has reached/surpassed a million if not already   
+            if(!alreadyMillion)
             {
                 if(balanceNew >= 1000000)
                 {
                 yearMil = year;
                 }
             }
-
-        //while neither year has been determined    
-        }while(yearDouble == 0 || yearMil == 0);
+                
+        //stop checking when both years have been determined    
+        }while(!alreadyDoubled || !alreadyMillion);
         
+        //inform the user how many years it will take to double their savings
         System.out.print("It will take " + yearDouble + " years to double your savings");
-        System.out.println("and " + yearMil + " years to reach a million dollars.");
+        //and how many years it will take to reach a million dollars
+        System.out.println(" and " + yearMil + " years to reach a million dollars.");
         
     }
     

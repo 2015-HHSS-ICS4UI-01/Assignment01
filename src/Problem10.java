@@ -28,17 +28,18 @@ public class Problem10 {
         //informs the user to begin inputting words
         System.out.println("Enter as many words as you would like.");
         
+        //allows the user to input words
         do{
             s = input.nextLine();
             
-            //if()
-            {
-                
-            }
-            
+            //counts the number of words typed by the user
             words++;
+            
+        //user can no longer enter words after inputing the word 'exit'
         }while (!s.equalsIgnoreCase("exit"));
         
+        //inform the user how many words they typed in total
+        System.out.println("You entered a total of " + words + " words.");
         
     }
 }
