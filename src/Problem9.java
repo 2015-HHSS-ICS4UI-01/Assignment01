@@ -18,7 +18,7 @@ public class Problem9 {
     public static void main(String[] args) {
         System.out.println("Please enter a series of 10 words: ");
         Scanner input = new Scanner(System.in);
-        String[] words = new String[2];
+        String[] words = new String[10];
         double charCount = 0;
         for (String word: words)
         {
