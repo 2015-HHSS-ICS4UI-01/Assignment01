@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -21,7 +24,17 @@ public class Problem9 {
      * Name your class Problem9*/
     public static void main(String[] args) {
         
+        Scanner s = new Scanner(System.in);
+        
         String[] words = new String[10];
+        
+        int letterCount = 0;
+        for (int i = 0; i < 10; i ++)
+        {
+            letterCount += s.next().length();
+        }
+        
+        System.out.println((double)(letterCount/10));
         
     }
 }
