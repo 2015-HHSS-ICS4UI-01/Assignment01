@@ -38,6 +38,9 @@ public class Problem10 {
         //user can no longer enter words after inputing the word 'exit'
         }while (!s.equalsIgnoreCase("exit"));
         
+        //removes the last word typed (exit) from the word count
+        words = words - 1;
+        
         //inform the user how many words they typed in total
         System.out.println("You entered a total of " + words + " words.");
         
