@@ -18,7 +18,6 @@ public class Problem2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        
         //create new array
         int[] nums = new int[3];
         
@@ -30,12 +29,26 @@ public class Problem2 {
             nums[i] = input.nextInt();
         }
         
+        //declare product as 0
         int product = 0;
-     
-        for(int i = 0; i < nums.length; i++)
-        {
-            
-        }
+        //multiply the 3 numbers
+        product = nums[0]*nums[1]*nums[2];
+        //output product
+        System.out.println("The product is: " + product);
+        
+        //find the square
+        double sqr = 0;
+        sqr = Math.pow(product,2);
+        //output the square
+        System.out.println("The square of the product is " + sqr);
+        
+        //find the squareroot of the product
+        double sqroot = 0;
+        sqroot = Math.sqrt(product);
+        //output the squareroot of the product
+        System.out.println("The square root of the product is " + sqroot);
+        
+        
         
     }
 }
