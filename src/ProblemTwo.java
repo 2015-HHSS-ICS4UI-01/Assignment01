@@ -29,7 +29,7 @@ public class ProblemTwo {
         System.out.println("The product is: " + multNums);
         
         double sqrNums = Math.sqrt(multNums);
-        System.out.printf("The the square of the product to 3 deciaml points is: %.2f \n", sqrNums);
+        System.out.printf("The the square of the product to 2 deciaml points is: %.2f \n", sqrNums);
         
         int powNums = (int) Math.pow(multNums,2);
         System.out.println("The product powered to 2 is: " + powNums);
