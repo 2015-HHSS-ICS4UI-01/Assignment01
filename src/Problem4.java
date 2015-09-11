@@ -22,19 +22,17 @@ public class Problem4 {
         Scanner input = new Scanner(System.in);
         System.out.println("Please enter a number between 1 and 10");
         int num = input.nextInt();
-        if(num <1 || num >10)
+        while(num <1 || num >10)
         {
             System.out.println("Number not between 1 and 10"); 
-        }else
+            System.out.println("Please enter a number between 1 and 10");
+            num = input.nextInt();
+        }
+        for(int count = 0; count != num; count++)
         {
-            int count = 0;
-            while(count < num)
-            {
-                System.out.print("*");
-                count++;
-            }
-            System.out.println("");
-        }    
+            System.out.print("*");
+        }         
+        System.out.println("");    
     }
     
 }
