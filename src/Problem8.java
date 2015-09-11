@@ -115,7 +115,9 @@ public class Problem8 {
                 if(balanceNew >= 1000000)
                 {
                 yearMil = year;
+                alreadyMillion = true;
                 }
+                
             }
                 
         //stop checking when both years have been determined    
