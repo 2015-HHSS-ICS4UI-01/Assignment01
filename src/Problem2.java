@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author paulm6438
  */
-public class ProblemTwo {
+public class Problem2 {
     
     public static void main(String[] args){
         
