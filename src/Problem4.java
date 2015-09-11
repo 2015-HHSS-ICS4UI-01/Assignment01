@@ -18,5 +18,9 @@ public class Problem4 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        
+        
+        
+        
     }
 }

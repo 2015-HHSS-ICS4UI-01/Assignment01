@@ -47,7 +47,7 @@ public class Problem3 {
         
         double totalPpl =  totalCost/35;
 
-        totalPpl = (int) Math.ceil(totalPpl);
+         totalPpl = (int) Math.ceil(totalPpl);
         
         System.out.println("The about of tickets that should be sold is: " + totalPpl);
         
