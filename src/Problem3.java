@@ -43,11 +43,13 @@ public class Problem3 {
         System.out.print("The micellaneous cost: ");
         int micellaneousCost=input.nextInt();
         
-        int totalCost = foodCost + djCost + hallRental + decorationCost + waitStaffCost + micellaneousCost;
+        double totalCost = foodCost + djCost + hallRental + decorationCost + waitStaffCost + micellaneousCost;
         
-        double numOfPpl = totalCost / 35;
+        double totalPpl =  totalCost/35;
+
+        totalPpl = (int) Math.ceil(totalPpl);
         
-     
+        System.out.println("The about of tickets that should be sold is: " + totalPpl);
         
     }
 }
