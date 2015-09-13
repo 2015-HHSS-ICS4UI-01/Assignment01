@@ -35,10 +35,13 @@ public class Problem3 {
                 totalcost = cost[i];
             }
         }
-        System.out.println(totalcost);
+        //output total expenses
+        
+        System.out.println("Total expense is: " + totalcost);
         
         //determine how many tickets they must sell
         sales = totalcost / ticket;
+        
         //output the amount of tickets they must sell
         System.out.println("You must sell " + sales + " tickets.");
         
