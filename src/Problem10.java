@@ -20,9 +20,9 @@ public class Problem10 {
         Scanner input = new Scanner(System.in);
         
         String exit = "exit"; 
-        int x = 0;
+        int x = 1;
         String[] words = new String[x];
-        String inp = input.nextLine();
+        
 //        while(inp != exit)
 //        {
 //            System.out.println("Input words: ");
@@ -31,11 +31,13 @@ public class Problem10 {
         
         for(int i = 0; i < words.length; i++)
         {
-            while(inp != exit)
+            while(words[i] != exit)
             {
             System.out.println("Input words");
-            String inpt = input.nextLine();
+            words[i] = input.nextLine();
+            
             }
+            
         }
     }
     
