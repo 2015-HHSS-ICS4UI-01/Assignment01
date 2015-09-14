@@ -23,14 +23,15 @@ public class Problem7 {
         //pop.>10 billion
         Scanner in = new Scanner(System.in);
         
-        long pop = 6000000000;
+        double pop = 6E9;
         int year = 0;
-        long billion = 10000000000;
-        while (true){
+        double billion = 10E9;
+        
+        while (pop<billion){
             year++;
-            pop = pop*1.4;
-            if(pop>)
+            pop = pop*1.014;
         }
+        System.out.println("in " + year + " there will be over 10 billion people.");
         
     }
     
