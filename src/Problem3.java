@@ -49,7 +49,7 @@ public class Problem3 {
 
          totalPpl = (int) Math.ceil(totalPpl);
         
-        System.out.println("The about of tickets that should be sold is: " + totalPpl);
+        System.out.printf("The amout of tickets that should be sold is: %.0f \n" , totalPpl);
         
     }
 }
