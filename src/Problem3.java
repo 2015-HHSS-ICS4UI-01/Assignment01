@@ -26,7 +26,9 @@ public class Problem3 {
         double waitStaff = input.nextDouble();
         System.out.println("Please enter the cost for the miscellaneous: ");
         double misc = input.nextDouble();
-        double totalCost = food + djCost + decorations + waitStaff + misc;
+        System.out.println("Please enter the cost for the rental hall: ");
+        double rentalHall = input.nextDouble();
+        double totalCost = food + djCost + decorations + waitStaff + misc + rentalHall;
         System.out.printf("The total is: $%.2f\n", totalCost);
         System.out.println("You need to sell " + Math.ceil(totalCost / 35) + " tickets to break even");
     }

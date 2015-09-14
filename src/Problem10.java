@@ -22,7 +22,7 @@ public class Problem10 {
             String inputt = input.next();
             if (inputt.equals("exit")) {
                 String[] allWords = words.split(" ");
-                System.out.println(allWords.length - 1);
+                System.out.println(allWords.length - 1+" words.");
                 break;
 
             } else {

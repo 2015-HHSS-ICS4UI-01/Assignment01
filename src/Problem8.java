@@ -20,7 +20,7 @@ public class Problem8 {
         System.out.println("Please enter the initial amount in the bank account: ");
         double initialAmount = input.nextDouble();
 
-        System.out.println("Please enter the interest rate: ");
+        System.out.println("Please enter the interest rate(as a decimal): ");
         double rate = input.nextDouble();
 
         int doublingYears = 0;
@@ -32,7 +32,7 @@ public class Problem8 {
         for (double x = initialAmount; x < initialAmount * 2; x += (x * rate)) {
             doublingYears++;
         }
-        System.out.println(millionYears);
-        System.out.println(doublingYears);
+        System.out.println(millionYears + " years to get 1 million dollars.");
+        System.out.println(doublingYears + " years to double.");
     }
 }
