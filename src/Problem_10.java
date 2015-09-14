@@ -30,6 +30,9 @@ public class Problem_10 {
                 done = true;
             } else {
                 wordCount ++;
+                if(word.contains(" ")) {
+                    wordCount ++;
+                }
             }
 
         }
