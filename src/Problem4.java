@@ -24,8 +24,7 @@ public class Problem4 {
                 asterixOutput += "*";
             }
             System.out.println(asterixOutput);
-        }
-        else{
+        } else {
             System.out.println("The number you have entered is not between 1 and 10.");
         }
 

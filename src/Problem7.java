@@ -16,9 +16,9 @@ public class Problem7 {
         double population = 6e9;
         double endPop = 1e10;
         int year = 1999;
-        for(double x = population; x < endPop; x+=(x*0.014)){
+        for (double x = population; x < endPop; x += (x * 0.014)) {
             year++;
         }
-        System.out.println("The population will reach 10 billion in year "+year+".");
+        System.out.println("The population will reach 10 billion in year " + year + ".");
     }
 }
