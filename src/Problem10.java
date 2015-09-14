@@ -19,26 +19,18 @@ public class Problem10 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        String exit = "exit"; 
-        int x = 1;
-        String[] words = new String[x];
-        
-//        while(inp != exit)
-//        {
-//            System.out.println("Input words: ");
-//            String word = 
-//        }
-        
-        for(int i = 0; i < words.length; i++)
+        //declare counter & array
+        int counter = 0;
+        String words;
+        //ask user to input words until "exit" has been inputted
+        System.out.println("Input words");
+        do
         {
-            while(words[i] != exit)
-            {
-            System.out.println("Input words");
-            words[i] = input.nextLine();
-            
-            }
-            
+               words = input.nextLine();
+//                //increase counter by 1
+                counter++;
+        }while(!words.equals("exit"));
+ 
+        System.out.println(counter);
         }
-    }
-    
 }
