@@ -19,15 +19,19 @@ public class Problem_10 {
     public static void main(String[] args) {
         Scanner input = new Scanner (System.in);
         
+        boolean done = false;
+        
         String word = "";
         int wordCount = 0;
         
-        while(!word.equals("exit") || !word.equals("Exit")) {
+        while(!done) {
             word = input.nextLine();
             if(word.equals("exit")) {
-                break;
+                done = true;
+            } else {
+                wordCount ++;
             }
-            wordCount ++;
+
         }
         
         System.out.println("You have entered " + wordCount + " words");
