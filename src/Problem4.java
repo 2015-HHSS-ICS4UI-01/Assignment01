@@ -19,7 +19,15 @@ public class Problem4 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         
+        System.out.print("please enter a number between 1 and 10: ");
+         
+        int num = input.nextInt();
         
+        for(int i = 1 ; i <= num ; i++)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
         
         
     }
