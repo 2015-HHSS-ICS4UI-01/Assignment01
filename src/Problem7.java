@@ -23,10 +23,10 @@ public class Problem7 {
         
         
         
-         while (main>goal){
+         while (goal>main){
              year++;
              
-           
+         main *= 1.014;  
          }
          
          System.out.println("The population will reach 10 billion in " + year);
