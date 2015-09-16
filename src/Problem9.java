@@ -29,9 +29,16 @@ public class Problem9 {
             num++;  
         }
         
+        double length = 0;
+        double w = 0;
+        
         for(int i = 0; i < words.length;i++)
         {
-            words[i].length
+            w = words[i].length();
+            length = length + w;
         }
+        
+        double avgLength = length/10;
+        System.out.println("The avergae length is " + avgLength);
     }
 }
