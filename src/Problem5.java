@@ -23,15 +23,22 @@ public class Problem5 {
          
         int num = input.nextInt();
         
-        for(int i = 1 ; i <= num ; i++)
+        if (num > 10 || num < 0) //&& statement means both must be correct, || means or
+           
         {
-            
-            
-            for(int l = 1 ; l <=num ; l++)
+            System.out.println("Please follow direction!");
+        } else
+        {
+            for(int i = 1 ; i <= num ; i++)
             {
-                System.out.print("*");
+
+
+                for(int l = 1 ; l <=num ; l++)
+                {
+                    System.out.print("*");
+                }
+                System.out.println();
             }
-            System.out.println();
         }
  
     }

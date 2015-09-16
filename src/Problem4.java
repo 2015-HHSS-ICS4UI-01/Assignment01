@@ -22,13 +22,18 @@ public class Problem4 {
         System.out.print("please enter a number between 1 and 10: ");
          
         int num = input.nextInt();
-        
-        for(int i = 1 ; i <= num ; i++)
+        if (num > 10 || num < 0) //&& statement means both must be correct, || means or
+           
         {
-            System.out.print("*");
+            System.out.println("Please follow direction!");
+        } else
+        {
+            for(int i = 1 ; i <= num ; i++)
+                {
+                    System.out.print("*");
+                }
+            System.out.println();
         }
-        System.out.println();
-        
         
     }
 }
