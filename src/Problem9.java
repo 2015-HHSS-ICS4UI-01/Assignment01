@@ -29,6 +29,7 @@ public class Problem9 {
             num = word.length() + num;
             words[i] = word;
         }
-        System.out.println(num);
+        int average = num/words.length;
+        System.out.println(average);
     }
 }
