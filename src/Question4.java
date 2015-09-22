@@ -19,10 +19,9 @@ public class Question4 {
     public static void main(String[] args) {
        Scanner input = new Scanner(System.in);
         System.out.println("Input a number between 1 - 10");
-        if (input.nextInt() >= 1 && input.nextInt() <= 10){
         int num = input.nextInt();
-        }else{
-            System.out.println("Try Again.");
+        for (int i = 1;i <= num; i++){
+            System.out.print("*");
         }
     }
     
