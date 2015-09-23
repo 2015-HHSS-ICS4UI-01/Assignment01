@@ -17,7 +17,7 @@ public class Question5 {
      */
     public static void main(String[] args) {
   Scanner input = new Scanner(System.in);
-        System.out.println("Please enter the number of stars you would like(between 1 and 20)");
+        System.out.println("Please enter the number of stars you would like(between 1 and 10)");
         int star = input.nextInt();
         System.out.println("");
         for (int coun = 1; coun <= star; coun++)
