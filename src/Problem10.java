@@ -19,7 +19,7 @@ public class Problem10 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         int i = 0;
-        while(true )
+        while(true)
         {
             System.out.println("please enter a word");
             String word = input.nextLine();
