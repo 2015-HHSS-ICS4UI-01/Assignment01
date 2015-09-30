@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author thomt9963
  */
-public class Question6 {
+public class Problem6 {
 
     /**
      * @param args the command line arguments

@@ -7,7 +7,7 @@
  *
  * @author thomt9963
  */
-public class Question7 {
+public class Problem7 {
 
     /**
      * @param args the command line arguments
