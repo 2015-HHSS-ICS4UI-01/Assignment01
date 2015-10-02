@@ -22,6 +22,9 @@ public class Problem4 {
 
         int counter = 1;
         for (star = star; counter <= star; counter = counter + 1) {
+            System.out.print("*");
         }
+
+        System.out.println("");
     }
 }
