@@ -22,7 +22,7 @@ public class Problem9 {
         String[] words = new String[10];
         for(int i=0; i < words.length; i++ )
         {
-            System.out.println("please enter a word famm");
+            System.out.println("please enter a word");
             words[i] = in.nextLine();
             tot += words[i].length();
         }
