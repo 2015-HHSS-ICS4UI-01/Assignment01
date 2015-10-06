@@ -22,7 +22,7 @@ public class Problem5 {
         int num = 0;
         
         System.out.print("Num between 1 and 10 (inclusive)\n>> ");
-        num = s.nextInt();
+        num = s.nextInt(); // the side length for the square to be formed by *
         
         for (int i = 0; i < num; i ++)
         {

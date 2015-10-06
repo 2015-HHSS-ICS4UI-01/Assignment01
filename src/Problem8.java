@@ -29,14 +29,14 @@ public class Problem8 {
         double endBalance = principal*2;
         double yrs = 0;
         
-        while (principal*Math.pow((1+rate), yrs) < endBalance)
+        while (principal*Math.pow((1+rate), yrs) < endBalance) // while the balance is less than the endBalance, keep incrementing years
         {
             yrs ++;
         }
         System.out.println("double " + yrs);
         
         yrs = 0;
-        while (principal*Math.pow((1+rate), yrs) < 1e6)
+        while (principal*Math.pow((1+rate), yrs) < 1e6) // same thing as above, except endBalance is now 1e6
         {
             yrs ++;
         }

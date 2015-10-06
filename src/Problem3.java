@@ -26,10 +26,10 @@ public class Problem3 {
         for (String expense: expenses)
         {
             System.out.print(expense + "\n>> ");
-            total += s.nextDouble();
+            total += s.nextDouble(); // get the expense for each item
         }
         
-        double breakEvenPoint = Math.ceil(total/ticketPrice);
+        double breakEvenPoint = Math.ceil(total/ticketPrice); // the breakeven point should be the next highest integer of the total tickets / ticket price
         
         System.out.println("total: $" + total);
         System.out.println("break even: " + breakEvenPoint + " tickets");

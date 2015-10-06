@@ -26,11 +26,11 @@ public class Problem10 {
         {
             System.out.print(">> ");
             word = s.next();
-            if (word.equals("exit"))
+            if (word.equals("exit")) //stop the program once exit has been typed.. also dont' include exit in the word count
             {
                 break;
             }
-            numWords ++;
+            numWords ++; //increment word count after each word
         }
         System.out.println(numWords);
         

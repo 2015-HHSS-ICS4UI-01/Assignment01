@@ -26,10 +26,10 @@ public class Problem9 {
         for (int i = 0; i < 10; i ++)
         {
             System.out.print(">> ");
-            letterCount += s.next().length();
+            letterCount += s.next().length(); // adds the inputed word  length to the total letter count
         }
         
-        System.out.println((double)(letterCount/10d));
+        System.out.println((double)(letterCount/words.length)); // divide total word length by the number of words to get the average
         
     }
 }

@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @author Dmitry
  */
 public class Problem4 {
-
+    
     /**
      * @param args the command line arguments
      */
@@ -24,7 +24,7 @@ public class Problem4 {
         System.out.print("Num between 1 and 10 (inclusive)\n>> ");
         num = s.nextInt();
         
-        System.out.println(new String(new char[num]).replace("\0", "*"));
+        System.out.println(new String(new char[num]).replace("\0", "*")); //creates a new empty string of length "num", and replaces each empty clot with a *
         
     }
     

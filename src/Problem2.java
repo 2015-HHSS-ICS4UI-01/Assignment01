@@ -19,7 +19,7 @@ public class Problem2 {
         for (int i = 0; i < nums.length; i ++)
         {
             System.out.print(">> ");
-            nums[i] = s.nextInt();
+            nums[i] = s.nextInt(); // populate array from user input
         }
         
         int product = nums[0]*nums[1]*nums[2];

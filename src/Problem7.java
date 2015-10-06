@@ -18,7 +18,7 @@ public class Problem7 {
         double rate = 1.014;
         double goal = 1e10;
         
-        double yr = Math.log(goal/pop)/Math.log(rate) + 1999;
+        double yr = Math.log(goal/pop)/Math.log(rate) + 1999; // yr = log(goal/population)/log(rate) --> the number of years to wait, then + 1999 since that's the start
         
         System.out.println(Math.ceil(yr));
     }

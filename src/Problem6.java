@@ -22,7 +22,7 @@ public class Problem6 {
         
         int num = s.nextInt();
         
-        for (int i = 100; i > num; i -= 5)
+        for (int i = 100; i > num; i -= 5) // decrement i, while making sure it never dips below the "num"
         {
             System.out.println(i);
         }
