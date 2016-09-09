@@ -22,7 +22,16 @@ public class Problem6 {
         //ask user to input number
         System.out.println("Please enter a number between 50 and 100 to stop at:");
         int num = input.nextInt();
+        
+        //create int to start at 100
         int countdown = 100;
+        
+        //loop to count down by 5s to the number the user input
+        while (num < (countdown + 4)){
+            countdown = countdown - 5;
+            System.out.println(countdown);
+        }
+            
         
         
         
