@@ -19,6 +19,9 @@ public class Problem8 {
         //insert scanner for user input
         Scanner input = new Scanner(System.in);
         
+        //count of years
+        int years = 0;
+        
         //ask user for initial money in bank account
         System.out.println("Please enter the initial amount of money in bank account:");
         double initial = input.nextDouble();
@@ -27,13 +30,16 @@ public class Problem8 {
         System.out.println("Now please enter the interest rate:");
         double interest = input.nextDouble();
         
+        //calculate the amount of years the interest will double
         while(initial<(initial*2)){
-            double timestwo = (1+interest)*initial;
-            initial = timestwo;
-            if(initial==(initial*2)){
-                break;
-            }
+            initial = (1+interest)*initial;
+            years = years +1;
         }
-        System.out.println("Your money will double in "+initial+" years.");        
+        
+        //output how many years interest will double
+        if(initial >=(initial*2)){
+             System.out.println("Your money will double in "+initial+" years.");  
+        }
+             
     }
 }
