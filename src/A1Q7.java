@@ -18,10 +18,20 @@ public class A1Q7 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // Scanner
-        Scanner input = new Scanner(System.in);
-        
+        // starting year
         int year = 1999;
-        double population = 6000000000;
+        
+        // population in billions
+        double popbill = 6;
+        
+        // while 
+        while (popbill < 10) {
+            popbill = popbill * 1.014;
+            year = year + 1;
+        }
+        
+        if (popbill > 10) {
+           System.out.println("The population reached " + popbill + " Billion in the year: " + year);
+        }
     }
 }
